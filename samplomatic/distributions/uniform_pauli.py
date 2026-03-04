@@ -29,5 +29,5 @@ class UniformPauli(Distribution):
 
     def sample(self, size, rng):
         return PauliRegister(
-            rng.integers(0, 4, (self.num_subsystems, size), dtype=PauliRegister.DTYPE)
+            rng.integers(0, 2, (self.num_subsystems, size), dtype=PauliRegister.DTYPE)
         )
